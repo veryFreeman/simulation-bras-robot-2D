@@ -4,8 +4,12 @@
   "description": "2D robot simulation",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "author": "Freeman",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.1"
+  }
 }
