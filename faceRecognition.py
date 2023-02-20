@@ -4,7 +4,12 @@ import cv2
 import os
 
 
-def recognition():
+def recognition(release):
+
+    if release and cam : 
+        cam.release()
+        return 'cam released'
+
     cam = cv2.VideoCapture(0)
     # cam.set(5,1)
     known_face_encodings = []
@@ -15,7 +20,11 @@ def recognition():
         break
     for filename in known_faces_filenames:
         face = face_recognition.load_image_file('web/asset/img/users/' + filename)
-        known_face_encodings.append(face_recognition.face_encodings(face)[0])
+        try :
+            known_face_encodings.append(face_recognition.face_encodings(face)[0])
+        except :
+            print(face_recognition.face_encodings(face))
+            break
     face_locations = []
     face_encodings = []
 
@@ -36,6 +45,7 @@ def recognition():
             # cv2.imshow('Video', frame)
             # if cv2.waitKey(1) & 0xFF == ord('q'):
             #  break
+
 
 
 cv2.destroyAllWindows()

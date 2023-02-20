@@ -1,0 +1,106 @@
+body {
+    overflow: hidden;
+}
+.simulPlusData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.simul, .debug {
+    width: 400px !important;
+}
+.simul {
+    height: 300px !important;
+    position: relative;
+    bottom: 60px;
+}
+.debug {
+    position: relative;
+    bottom: 110px;
+    height: 250px !important;
+    overflow: scroll;
+}
+.data {
+    position: relative;
+    width: 320px;
+}
+.inputBox {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 5%;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.inputBox span {
+    position: absolute;
+    left: 17px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.25);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid #00dfc4;
+}
+#l1 {
+    left: 40%;
+}
+#l2 {
+    left: 73%;
+}
+#teta2 {
+    left: 60%;
+}
+#yb {
+    left: 60%;
+}
+#temps {
+    left: 60%;
+}
+.contain {
+    position: relative;
+    bottom: 28px;
+}
+button {
+    width: 150px;
+    margin: 10px
+}
+.buttons {
+    position:relative;
+    bottom: 25px;
+}
+#graph {
+    position: relative;
+    bottom: 30px;
+    left: 3%;
+}

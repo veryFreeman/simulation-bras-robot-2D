@@ -272,5 +272,8 @@ plot.set_xlim((7,0))
 plot.set_ylim((0, 9))
 plot.grid(True)
 
+def init() :
+    return mpld3.fig_to_html(schema, figid='graph').split('}else{')[1].split('''mpld3_load_lib("https://d3js.org/d3.v5.js", function(){
+         mpld3_load_lib("https://mpld3.github.io/js/mpld3.v0.5.9.js", function(){''')[1].split(';')[0]
 
 # fen_simulation.mainloop()
