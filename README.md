@@ -6,4 +6,6 @@ the mpld3 javaScript module is also used to bring matplolib to the electron brow
 the eel librairy is used to expose some funtions including simualtion functions.
 there are two main file, the index.html wich is the login page and the _ index _.html wich is the simulation interface.
 
-you should init electronJS project in ./web project running npm install command
+you should init electronJS project in ./web project running _npm install_ command
+
+to launch the app, type _python main.py_ in the main folder. Wait for the server to start then type _npm start_ in the ./web folder
